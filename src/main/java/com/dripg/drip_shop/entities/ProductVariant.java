@@ -2,6 +2,7 @@ package com.dripg.drip_shop.entities;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,19 +20,22 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class ProductVariant {
-
     @Id
     @GeneratedValue
     private UUID id;
+
     @Column(nullable = false)
     private String color;
+
     @Column(nullable = false)
     private String size;
+
     @Column(nullable = false)
     private Integer stockQuantity;
 
-    @ManyToMany
-    @JoinColumn(name = "product_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "product_id",nullable = false)
+    @JsonIgnore
     private Product product;
 
 }

@@ -1,6 +1,5 @@
 package com.dripg.drip_shop.entities;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,14 +8,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.UUID;
-
+//ok
 @Entity
-@Table(name = "category_type")
+@Table(name = "product_resources")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CategoryType {
+public class Resources {
+
     @Id
     @GeneratedValue
     private UUID id;
@@ -25,15 +25,17 @@ public class CategoryType {
     private String name;
 
     @Column(nullable = false)
-    private String description;
+    private String url;
 
     @Column(nullable = false)
-    private String code;
+    private Boolean isPrimary;
 
+    @Column(nullable = false)
+    private String type;
 
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
+    @JoinColumn(name = "product_id", nullable = false)
     @JsonIgnore
-    private Category category;
+    private Product product;
 
 }

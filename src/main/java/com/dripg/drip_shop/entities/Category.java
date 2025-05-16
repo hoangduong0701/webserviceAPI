@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.UUID;
-
 @Entity
 @Table(name = "categories")
 @Data
@@ -17,9 +16,9 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class Category {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column
-    @GeneratedValue
     private UUID id;
 
     @Column(nullable = false)
@@ -31,10 +30,6 @@ public class Category {
     @Column(nullable = false)
     private String code;
 
-
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    private List<CategoryType> categories;
-
-
-
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CategoryType> categoryTypes;
 }

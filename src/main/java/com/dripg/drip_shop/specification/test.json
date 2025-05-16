@@ -1,0 +1,51 @@
+{
+  "id": "65cd3f75-8b95-4df2-8180-bede3fedcc7e",
+  "name": "Áo sweat jean",
+  "description": "Classic Trơn đen",
+  "price": 150.00,
+  "brand": "Drity Coins",
+  "categoryId": "f8a37ba6-a74e-4487-987e-f0131b980237",
+  "thumbnail": "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2022/12/ao-sweater-ni-whoau-photo-steve-whmwc2299u-mau-be-6396a4a291a13-12122022104850.jpg",
+  "slug": "T-Shirt",
+  "categoryName": "Nam",
+  "categoryTypeId": "331b2f0e-506a-46eb-8074-e292399f00f7",
+  "categoryTypeName": "áo Jeans",
+  "rating": 3.0,
+  "variants": [
+    {
+      "id": "7e995653-2a0e-4374-8d47-cb8f58056783",
+      "color": "Trắng",
+      "size": "XL",
+      "stockQuantity": 1
+    },
+    {
+      "id": "4c64f553-3301-4266-bc27-1ee0155ce306",
+      "color": "Đen",
+      "size": "XL",
+      "stockQuantity": 1
+    },
+    {
+      "id": "fcce6191-8428-4f53-bb4e-2ca435d7c821",
+      "color": "Xanh",
+      "size": "M",
+      "stockQuantity": 1
+    }
+  ],
+  "productResource": [
+    {
+      "id": "1fc89923-d2be-44cb-bec5-e9f0b17842df",
+      "name": "chiaki.jpg",
+      "url": "https://cdn.chiaki.vn/unsafe/0x480/left/top/smart/filters:quality(75)/https://chiaki.vn/upload/product/2022/12/ao-sweater-ni-whoau-photo-steve-whmwc2299u-mau-be-6396a4a291a13-12122022104850.jpg",
+      "isPrimary": null,
+      "type": "image"
+    },
+    {
+      "id": "885f8201-5480-4432-9b3b-1a5fa3e57254",
+      "name": "sweater.jpg",
+      "url": "https://product.hstatic.net/1000308345/product/img_2913_cb42bdd54b7846448e6c7f7c10c6c66b_master.jpg",
+      "isPrimary": null,
+      "type": "image"
+    }
+  ],
+  "newArrival": true
+}
